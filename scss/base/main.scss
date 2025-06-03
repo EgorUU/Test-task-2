@@ -1,0 +1,17 @@
+// Очистка стилей
+
+@import './_reset.scss';
+
+// Переменные
+
+@import './variables.scss';
+
+// Шрифты
+
+@import './_fonts.scss';
+
+// Секции
+
+@import '../blocks/_drum.scss';
+
+@import '../blocks/_form.scss';

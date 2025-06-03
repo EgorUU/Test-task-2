@@ -1,0 +1,38 @@
+body {
+  background-image: url("../images/form bg.png") !important;
+  -webkit-backdrop-filter: brightness(0.6);
+          backdrop-filter: brightness(0.6);
+  background-size: cover;
+  overflow-y: auto;
+}
+@media (min-width: 930px) {
+  body {
+    padding-bottom: 393px;
+  }
+}
+@media (max-width: 930px) {
+  body {
+    padding-bottom: 813px !important;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    padding-bottom: 449px !important;
+    background-image: url("../images/form bg adaprive.png") !important;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 400px !important;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-size: 168% !important;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    padding-bottom: 354px !important;
+  }
+}

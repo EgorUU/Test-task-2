@@ -1,0 +1,69 @@
+body {
+  background-image: url("../images/bg.png");
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media (max-width: 930px) {
+  body {
+    background-image: url("../../images/enhanced_ultra-realistic_futuristic_casino_interior_at_night_drenched_in_vivid_neon_lighting__dominant_hues__1ukuwrouqsymd2oe1ub1_3 1.png");
+  }
+}
+@media (max-width: 1765px) {
+  body {
+    background-size: 139% !important;
+  }
+}
+@media (min-width: 850px) {
+  body {
+    background-size: 105%;
+  }
+}
+@media (max-width: 930px) {
+  body {
+    background-size: 108%;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    background-size: 127% !important;
+  }
+}
+@media (max-width: 670px) {
+  body {
+    background-size: 107% !important;
+  }
+}
+@media (max-width: 530px) {
+  body {
+    background-size: 138% !important;
+  }
+}
+
+@media (max-width: 930px) {
+  .body-active::after {
+    content: "";
+    background-image: url("../images/shadow.png");
+    background-size: cover;
+    width: 100vw;
+    height: 204vh;
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    left: 0;
+  }
+}
+@media (max-width: 930px) and (max-width: 850px) {
+  .body-active::after {
+    height: 189vh;
+  }
+}
+@media (max-width: 930px) and (max-width: 670px) {
+  .body-active::after {
+    height: 127vh;
+  }
+}
+@media (max-width: 930px) and (max-width: 530px) {
+  .body-active::after {
+    height: 100vh;
+  }
+}

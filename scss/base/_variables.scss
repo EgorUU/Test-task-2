@@ -1,0 +1,10 @@
+@mixin font($size, $font-weight) {
+    font-size: $size;
+    font-weight: $font-weight;
+}
+@mixin btn($width, $height, $size, $bg) {
+    width: $width;
+    height: $height;
+    font-size: $size;
+    background: $bg;
+}

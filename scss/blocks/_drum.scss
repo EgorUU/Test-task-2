@@ -1,0 +1,1002 @@
+
+.up-shadow {
+    display: none;
+    @media (max-width: 930px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @media (max-width: 850px) {
+        height: 454px;
+    }
+}
+.drum {
+    &__chip {
+        position: absolute;
+        top: -84px;
+        left: 76.5%;
+        width: 365px;
+        @media (min-width: 1800px) {
+            left: 85.5%;
+        }
+        @media (max-width: 930px) {
+            top: 599px;
+            left: 67.5%;
+            width: 365px;
+            z-index: -1;
+        }
+        @media (min-width: 1317px) {
+            left: 82.5%;
+        }
+        @media (max-width: 670px) {
+            top: 354px;
+            left: 67.5%;
+            width: 246px;
+            z-index: -1;
+        }
+        @media (max-width: 530px) {
+            top: 249px;
+            left: 75.5%;
+            width: 187px;
+            z-index: -1;
+        }
+    }
+    &__logo {
+        position: relative;
+        .drum-img {
+            width: 258px;
+            height: 204px;
+            left: 221px;
+            top: 9px;
+            position: absolute;
+            @media (max-width: 1000px) {
+                left: 137px;
+            }
+            @media (max-width: 930px) {
+                width: 353px;
+                height: 308px;
+                left: -137px;
+                top: 213px;
+            }
+            @media (max-width: 670px) {
+                width: 207px;
+                height: 162px;
+                left: -68px;
+                top: 81px;
+            }
+        }
+        display: flex;
+        justify-content: center;
+        &-content {
+            text-align: center;
+        }
+        padding-top: 53px;
+        @media (max-width: 930px) {
+            padding-top: 211px;
+        }
+        @media (max-width: 670px) {
+            padding-top: 146px;
+        }
+        @media (max-width: 530px) {
+            padding-top: 128px;
+        }
+        h1 {
+            @include font(53px, 600);
+            font-family: "Cera Pro", sans-serif;
+            color: #fff;
+            margin-bottom: 28px;
+            @media (max-width: 530px) {
+                font-size: 54px !important;
+            }
+            @media (max-width: 850px) {
+                margin-bottom: 25px !important;
+            }
+            @media (max-width: 930px) {
+                margin-bottom: 54px;
+            }
+            @media (max-width: 930px) {
+                font-size: 119px;
+            }
+            @media (max-width: 850px) {
+                font-size: 85px;
+                margin-bottom: 54px !important;
+            }
+            @media (max-width: 670px) {
+                font-size: 73px !important;
+                margin-bottom: 42px !important;
+            }
+            @media (max-width: 530px) {
+                font-size: 55px !important;
+                margin-bottom: 34px !important;
+            }
+        }
+        &-title {
+            @media (min-width: 930px) {
+                display: none;
+            }
+            font-size: 46px;
+            width: 758px;
+            font-weight: 900;
+            text-align: center;
+            font-family: "Cera Pro", sans-serif;
+            @media (max-width: 930px) {
+                font-size: 46px;
+            }
+            @media (max-width: 850px) {
+                font-size: 37px;
+                width: 558px;
+            }
+            @media (max-width: 670px) {
+                font-size: 28px !important;
+                width: 419px !important;
+            }
+            @media (max-width: 530px) {
+                font-size: 21px !important;
+                width: 342px !important;
+            }
+            color: #fff;
+        }
+        button {
+            @include btn(298.95px, 50px, 19px, #FF00A2);
+            margin-top: 22px;
+            font-family: "Cera Pro", sans-serif;
+            color: #fff;
+            @media (max-width: 670px) {
+                width: 382.95px !important;
+                height: 69px !important;
+                font-size: 26px !important;
+                margin-top: 15px !important;
+            }
+            @media (max-width: 530px) {
+                width: 289.95px !important;
+                height: 58px !important;
+                font-size: 20px !important;
+                margin-top: 10px !important;
+            }
+            @media(max-width: 930px) {
+                width: 651.95px;
+                height: 130px;
+                font-size: 45px;
+            }
+            @media (max-width: 850px) {
+                width: 446.95px;
+                height: 70px;
+                font-size: 24px;
+            }
+            font-weight: 600;
+            cursor: pointer;
+            transform: rotate(-2.8deg);
+        }
+    }
+//     &__main {
+//         @media (max-width: 930px) {
+//             margin-top: -166px;
+//             padding-bottom: 39px;
+//             width: 835.832458px;
+//             height: 835.832458px;
+//         }
+//         @media (max-width: 670px) {
+//             width: 512.832458px !important;
+//             height: 512.832458px !important;
+//             margin-top: -278px !important;
+//         }
+//         &-container {
+//             position: relative;
+//             margin-top: 120px;
+//             @media (max-width: 930px) {
+//                 transform: translateX(-27%);
+//                 margin-top: 470px;
+//             }
+//             @media (max-width: 850px) {
+//                 transform: translateX(-32%);
+//             }
+//             @media (min-width: 930px) {
+//                 transform: translate(0, 0) !important;
+//                 margin-top: 0 !important;
+//             }
+//             @media (max-width: 670px) {
+//                 transform: translateX(-22%);
+//             }
+//             @media (max-width: 530px) {
+//                 transform: translateX(-18%);
+//             }
+//         }
+//         margin-top: 22px;
+//         padding-bottom: 39px;
+//         width: 456.832458px;
+//         height: 456.832458px;
+//         background-image: url('../../images/колесо.png');
+//         background-size: cover;
+//         position: relative;
+//         @media (max-width: 850px) {
+//             width: 700.832458px;
+//             height: 700.832458px;
+//         }
+//         @media (max-width: 530px) {
+//             width: 376.832458px !important;
+//             height: 376.832458px !important;
+//             margin-top: -334px !important;
+//         }
+//         &-up {
+//             // width: 491.832458px;
+//             // height: 470.83252px;
+//             // animation: scrollingDrum 1s ease-in-out;
+//             @media (max-width: 670px) {
+//                 top: -297px !important;
+//                 left: -20px !important;
+//                 min-width: 550px !important;
+//                 height: 550px !important;
+//             }
+//             @media (max-width: 930px) {
+//                 top: -195px;
+//                 left: -28px;
+//                 min-width: 895px;
+//                 height: 895px;
+//             }
+//             @media (max-width: 530px) {
+//                 top: -347px !important;
+//                 left: -14px !important;
+//                 min-width: 404px !important;
+//                 height: 404px !important;
+//             }
+//             position: absolute;
+//             top: 7px;
+//             left: -16px;
+//             min-width: 488px;
+//             height: 488px;
+//             @media (max-width: 850px) {
+//                 top: -191px;
+//                 left: -28px;
+//                 min-width: 752px;
+//                 height: 752px;
+//             }
+//         }
+//         &-internal {
+//             width: 283.832458px;
+//             height: 283.83252px;
+//             @media (max-width: 850px) {
+//                 width: 438.832458px !important;
+//                 height: 438.83252px !important;
+//                 position: absolute;
+//                 top: -36px !important;
+//                 left: 129px !important;
+//             }
+//             @media (max-width: 930px) {
+//                 width: 517.832458px;
+//                 height: 517.83252px;
+//                 position: absolute;
+//                 top: -11px;
+//                 left: 156px;
+//             }
+//              @media (max-width: 670px) {
+//                 width: 312.832458px !important;
+//                 height: 312.83252px !important;
+//                 top: -181px !important;
+//                 left: 98px !important;
+//             }
+//             @media (max-width: 530px) {
+//                 width: 236.832458px !important;
+//                 height: 236.83252px !important;
+//                 top: -263px !important;
+//                 left: 69px !important;
+//             }
+//             position: absolute;
+//             top: 107px;
+//             left: 86px;
+//             background-image: url('../../images/колесо (1).png');
+//             background-size: cover;
+//             &--wheel {
+//                 @media (max-width: 850px) {
+//                     width: 494.832458px !important;
+//                     height: 494.832458px !important;
+//                     top: -63px !important;
+//                     left: 100px !important;
+//                 }
+//                 @media (max-width: 670px) {
+//                     width: 350.832458px !important;
+//                     height: 350.832458px !important;
+//                     top: -201px !important;
+//                     left: 79px !important;
+//                 }
+//                 @media (max-width: 930px) {
+//                     width: 580.832458px;
+//                     height: 580.832458px;
+//                     top: -43px;
+//                     left: 125px;
+//                 }
+//                 @media (max-width: 530px) {
+//                     width: 260.832458px !important;
+//                     height: 261.832458px !important;
+//                     top: -276px !important;
+//                     left: 57px !important;
+//                 }
+// width: 318.832458px;
+//     height: 318.832458px;
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex
+// ;
+//     -webkit-box-pack: center;
+//     -ms-flex-pack: center;
+//     justify-content: center;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     top: 90px;
+//     left: 69px;
+//                 background-image: url(../../images/внутрений.png);
+//                 background-size: cover;
+//                 position: absolute;
+//                 .indicator {
+//                     width: 86px;
+//                     height: 121px;
+//                 }
+//             }
+//         }
+//     }
+//     &__spin {
+//         // position: absolute;
+//         transform: translateY(-70px) !important;
+//         width: 240px;
+//         height: 380px;
+//         @media (max-width: 930px) {
+//             display: none;
+            
+//         }
+//     }
+
+
+
+.drum {
+    font-family: "Cera Pro", sans-serif;
+
+    &__wrapper {
+        width: 100%;
+        height: 530px;
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 930px) {
+            margin-top: 315px;
+        }
+        @media (max-width: 850px) {
+            margin-top: 158px;
+        }
+        @media (max-width: 670px) {
+            margin-top: 70px;
+        }
+        @media (max-width: 530px) {
+            margin-top: -13px;
+        }
+    }
+    &-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../images/shadow\ drum.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        height:530px;
+        position: relative;
+        z-index: 99;
+        width:530px;
+        @media (max-width: 930px) {
+            height: 930px;
+            width: 930px;
+        }
+        @media (max-width: 850px) {
+            height: 700px;
+            width: 700px;
+        }
+        @media (max-width: 670px) {
+            height: 535px;
+            width: 535px;
+        }
+        @media (max-width: 530px) {
+            height: 369px;
+            width: 369px;
+        }
+        .drum-container-adaptive-button {
+            transform: translateY(503px);
+            position: absolute;
+            width: 575px;
+            height: 123px;
+            background: rgba(188, 18, 230, 0.5);
+            display: flex;
+            justify-content: center;    align-items: center;
+            @media (min-width: 930px) {
+                display: none;
+            }
+            @media (max-width: 850px) {
+                width: 473px !important;
+                height: 96px !important;
+            }
+            @media (max-width: 670px) {
+                width: 344px !important;
+                height: 88px !important;
+                transform: translateY(306px);
+            }
+            @media (max-width: 530px) {
+                width: 260px !important;
+                height: 46px !important;
+                transform: translateY(234px);
+            }
+            h1 {
+                font-size: 44px;
+                color: white;
+                font-family: "Cera Pro", sans-serif;
+                font-weight: 800;
+                @media (max-width: 850px) {
+                    font-size: 34px;
+                }
+                @media (max-width: 670px) {
+                    font-size: 25px;
+                }
+                @media (max-width: 530px) {
+                    font-size: 18px;
+                }
+                span {
+                    color: rgba(133, 255, 8, 1);
+                    font-size: 57px;
+                    @media (max-width: 850px) {
+                        font-size: 44px;
+                    }
+                    @media (max-width: 670px) {
+                        font-size: 37px;
+                    }
+                    @media (max-width: 530px) {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        .drum-el {
+            @media (max-width: 930px) {
+                width: 831px;
+                height: 831px;
+            }
+            @media (max-width: 850px) {
+                width: 620px;
+                height: 620px;
+            }
+            @media (max-width: 670px) {
+                width: 475px;
+                height: 475px;
+            }
+            @media (max-width: 530px) {
+                width: 365px;
+                height: 365px;
+            }
+            width: 481px;
+            height: 481px;
+            // display: none;
+            border-radius: 50%;
+            background: url('../images/drum 1.png') center / cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-button {
+                width: 90px;
+                height: 90px;
+                @media (max-width: 930px) {
+                    width: 140px;
+                    height: 140px;
+                }
+                border-radius: 50%;
+                cursor: pointer;
+                position: relative;
+            }
+        }
+        .drum-el-button-text {
+            @include font(9px, 900);
+            font-family: "Cera Pro", sans-serif;
+            line-height: 107%;
+            position: absolute;
+            top: 49%;
+            left: 43.5%;
+            color: #fff;
+            @media (max-width: 930px) {
+                font-size: 17px;
+            }
+            @media (max-width: 850px) {
+                font-size: 13px;
+            }
+            @media (max-width: 670px) {
+                font-size: 10px;
+            }
+            @media (max-width: 530px) {
+                font-size: 7px;
+            }
+        }
+
+    }
+    &-table-1 {
+        @media (max-width: 930px) {
+            display: none;
+        }
+        width: 340px;
+        height: 137px;
+        background: linear-gradient(90deg, rgba(183, 183, 183, 0), rgba(158, 4, 227, 1) 63.24%);
+
+        margin-right: -35px;
+        color: #fff;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        text-align: center;
+        h1 {
+            @include font(20px, 900);
+            width: 100px;
+            font-family: "Cera Pro", sans-serif;
+            width: 235px;
+        }
+    }
+    &-table-2 {
+        @media (max-width: 930px) {
+            display: none;
+        }
+        width: 340px;
+        height: 137px;
+        background: linear-gradient(90deg, rgba(158, 4, 227, 1), rgba(158, 4, 227, 0));
+        
+        margin-left: -35px;
+        color: #fff;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        text-align: center;
+        h1 {
+            @include font(25px, 900);
+            width: 290px;
+            font-family: "Cera Pro", sans-serif;
+            span {
+                font-size: 32px;
+                color: rgba(133, 255, 8, 1);
+            }
+        }
+    }
+}
+
+
+.sport {
+    position: absolute;
+    width: 350px;
+    height: 315px;
+    top: 349px;
+    left: 63%;
+    @media (max-width: 930px) {
+        width: 490px;
+    height: 457px;
+    top: 1153px;
+    left: 63%;
+    }
+    @media (max-width: 850px) {
+        width: 391px;
+        height: 371px;
+        top: 875px;
+        left: 58%;
+    }
+    @media  (max-width: 670px) {
+        width: 307px;
+        height: 305px;
+        top: 684px;
+        left: 58%;
+    }
+    @media (max-width: 530px) {
+        width: 251px;
+        height: 234px;
+        top: 533px;
+        left: 57%;
+    }
+}
+
+.gifs {
+    position: absolute;
+    width: 429px;
+    height: 385px;
+    top: 279px;
+    left: 7%;
+    @media (max-width: 930px) {
+        width: 679px;
+        height: 588px;
+        top: 986px;
+        left: -17%
+;
+    }
+    @media (max-width: 850px) {
+        width: 501px;
+        height: 464px;
+        top: 758px;
+        left: -5%;
+    }
+    @media (max-width: 670px) {
+        width: 385px;
+        height: 377px;
+        top: 588px;
+        left: -5%;
+    }
+    @media (max-width: 530px) {
+        width: 324px;
+        height: 283px;
+        top: 462px;
+        left: -5%;
+    }
+}
+
+.chips {
+    position: absolute;
+    width: 350px;
+    height: 293px;
+    top: 88px;
+    left: 66%;
+    @media (max-width: 930px) {
+        width: 609px;
+        height: 506px;
+        top: 501px;
+        left: 65%;
+    }
+    @media (max-width: 850px) {
+        width: 464px;
+        height: 427px;
+        top: 400px;
+        left: 60%;
+    }
+    @media (max-width: 670px) {
+        width: 394px;
+        height: 346px;
+        top: 302px;
+        left: 60%;
+    }
+    @media (max-width: 530px) {
+        width: 265px;
+        height: 251px;
+        top: 249px;
+        left: 62%;
+    }
+}
+
+.dollars {
+    position: absolute;
+    width: 267px;
+    height: 257px;
+    top: 107px;
+    left: 15%;
+    @media (max-width: 930px) {
+        width: 284px;
+        height: 286px;
+        top: 629px;
+        left: -1%
+    }
+    @media (max-width: 850px) {
+        width: 241px;
+        height: 250px;
+        top: 493px;
+        left: 6%;
+    }
+    @media (max-width: 670px) {
+        width: 190px;
+        height: 201px;
+        top: 380px;
+        left: 5%;
+    }
+    @media (max-width: 530px) {
+        width: 146px;
+        height: 149px;
+        top: 306px;
+        left: 7%;
+    }
+}
+
+
+
+
+}
+.internal-active {
+    background-image: url('../images/active wheel.png') !important;
+    @media (max-width: 930px) {
+        width: 596.832458px !important;
+        height: 596.832458px !important;
+        top: -51px !important;
+        left: 119px !important;
+    }
+    @media (max-width: 850px) {
+        width: 505.832458px !important;
+        height: 505.832458px !important;
+        top: -70px !important;
+        left: 96px !important;
+    }
+    @media (max-width: 670px) {
+        width: 349.832458px !important;
+        height: 371.832458px !important;
+        top: -210px !important;
+        left: 71px !important
+    }
+    @media (max-width: 530px) {
+        width: 273.832458px !important;
+        height: 276.832458px !important;
+        top: -284px !important;
+        left: 50px !important;
+    }
+                width: 329.832458px;
+    height: 323.832458px;
+    top: 86px;
+    left: 64px;
+}
+.indicator {
+    position: absolute;
+    top: 161px;
+    left: 183px;
+    width: 91px;
+    height: 131px;
+    @media (max-width: 930px) {
+        top: 104px;
+        left: 337px;
+        width: 155px;
+        height: 227px;
+    }
+    @media (max-width: 850px) {
+        top: 65px;
+        left: 288px;
+        width: 126px;
+        height: 186px;
+    }
+    @media (max-width: 670px) {
+        top: -120px;
+        left: 207px;
+        width: 98px;
+        height: 142px;
+    }
+    @media (max-width: 530px) {
+        top: -214px;
+        left: 154px;
+        width: 70px;
+        height: 100px;
+    }
+}
+.spin-adaptive {
+    display: none;
+    position: absolute;
+    @media (max-width: 930px) {
+        display: block;
+        top: 25px;
+        left: 45%;
+    }
+    @media (max-width: 670px) {
+        width: 258px !important;
+        height: 152px !important;
+        top: 25px !important;
+        left: 49% !important;
+    }
+    @media (max-width: 530px) {
+        width: 201px !important;
+        height: 118px !important;
+        top: 10px !important;
+        left: 51% !important;
+    }
+}
+@keyframes scrollingDrum {
+    1% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(274deg);
+    }
+}
+
+.alert {
+    width: 686px;
+    height: 110px;
+    background: rgba(0, 0, 0, 0.8);
+    top: 573px;
+    border: 5px solid #85FF08;
+    border-radius: 21px;
+    padding: 0 38px;
+    display: flex;
+    align-items: center;
+    animation: alertAnim 1s ease;
+    z-index: 99;
+    // gap: 59px;
+    &-content {
+        width: 497px;
+        @media (max-width: 670px) {
+            width: 299px;
+        }
+        @media (max-width: 530px) {
+            width: 232px;
+        }
+        h1 {
+            @include font(32px, 500);
+            font-family: 'Cera Pro', sans-serif;
+            color: #fff;
+            @media (max-width: 930px) {
+                font-size: 53px;
+                text-align: center;
+            }
+            @media (max-width: 670px) {
+                font-size: 36px;
+            }
+            @media (max-width: 530px) {
+                font-size: 27px;
+            }
+        }
+        h2 {
+           @include font(29px, 900);
+           font-family: 'Cera Pro', sans-serif; 
+           color: #85FF08;
+           @media (max-width: 930px) {
+            font-size: 58px;
+            text-align: center;
+            margin-bottom: 20px;
+           }
+           @media (max-width: 670px) {
+                font-size: 34px;
+           }
+           @media (max-width: 530px) {
+            font-size: 26px;
+           }
+        }
+    }
+    a {
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        h1 {
+            font-size: 20px;
+            font-weight: 900;
+            font-family: "Cera Pro", sans-serif;
+            color: #000;
+        }
+        @media (max-width: 930px) {
+            width: 449px;
+            height: 75px;  
+            h1 {
+                font-size: 40px; 
+            }
+        }
+        @media (max-width: 670px) {
+            width: 276px;
+            height: 48px; 
+            h1 {
+                font-size: 25px; 
+            }
+        }
+        @media (max-width: 530px) {
+            width: 201px;
+            height: 39px;
+            h1 {
+                font-size: 18px;
+            }
+        }
+        background: #85FF08;
+        border-radius: 5px;
+        width: 251px;
+        height: 41px;
+        transform: translateY(-4px);
+    }
+    @media (max-width: 930px) {
+        width: 615px;
+        height: 456px;
+        flex-direction: column;
+        padding-top: 70px;
+        animation: alertAnimation 2s ease;
+    }
+    @media (max-width: 670px) {
+        width: 375px;
+        height: 278px;
+        padding-top: 39px;
+    }
+    @media (max-width: 530px) {
+        width: 289px;
+        height: 214px;
+        padding-top: 27px;
+    }
+    &-container {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 486px;
+        @media (max-width: 930px) {
+            top: 720px;
+        }
+        @media (max-width: 670px) {
+            top: 452px;
+        }
+        @media (max-width: 530px) {
+            top: 329px;
+        }
+    }
+}
+
+
+.arrow {
+    position: absolute;
+    width: 43px;
+    height: 63px;
+    top: 17px;
+    left: 46%;
+    z-index: 99;
+    @media (max-width: 930px) {
+        width: 71px;
+        height: 99px;
+        top: 43px;
+        left: 46.5%;
+    }
+    @media (max-width: 850px) {
+        width: 46px;
+        height: 68px;
+        top: 27px;
+        left: 47.5%;
+    }
+    @media (max-width: 670px) {
+        width: 42px;
+        height: 62px;
+        top: 16px;
+        left: 46.5%;
+    }
+    @media (max-width: 530px) {
+                width: 31px;
+        height: 44px;
+        top: -5px;
+        left: 46.5%;
+    }
+}
+
+
+@keyframes alertAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+.up-active {
+    background-image: url('../images/wheel\ active.png') !important;
+}
+.new-up-active {
+    background-image: url('../images/wheel\ new-active.png') !important;
+}
+
+@keyframes scrollingUpDrum {
+    1% {
+        transform: rotate(0deg);
+    }
+    // 50% {
+    //     transform: rotate(355deg);
+    // }
+    100% {
+        transform: rotate(536deg);
+    }
+}
+
+@keyframes newScrollingUpDrum {
+    1% {
+        transform: rotate(0deg);
+    }
+    // 50% {
+    //     transform: rotate(355deg);
+    // }
+    100% {
+        transform: rotate(580deg);
+    }
+}
+
+
+
+
+
+@keyframes alertAnim {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    from {
+        transform: translateY(111px);
+        opacity: 0;
+    }
+}
